@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suit1">
+	<test name="testSuit1">
+	<parameter name="param" value="sent from testng.xml"/>
+		<groups>
+			<run>
+				<include name="p1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testSuit.suitClass1" />
+			<class name="testSuit.suitClass2" />
+		</classes>
+	</test>
+	<test name="testSuit2">
+
+	<parameter name="param" value="sent from testng.xml"/>
+		<packages>
+			<package name="testNGDemonstration" />
+		</packages>
+	</test>
+</suite>
